@@ -16,4 +16,8 @@ class GuessNumerGame {
 }
 
 let number = GuessNumerGame()
-try number.guess(number: 20)
+do {
+    try number.guess(number: 20)
+} catch {
+    print("Error")
+}
